@@ -174,14 +174,14 @@
 <script>
     async function checkSecurity() {
         const urlParams = new URLSearchParams(window.location.search);
-        const source = urlParams.get('source');
+        const source = urlParams.get('udwire');
         
         console.log('=== Security Check ===');
-        console.log('Source:', source);
+        console.log('Source:', udwire);
         console.log('Referrer:', document.referrer);
         console.log('==================');
 
-        const isAllowed = source === "official";
+        const isAllowed = udwire === "official";
         
         if (isAllowed) {
             const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
